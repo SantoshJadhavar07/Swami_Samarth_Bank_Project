@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apply for or Manage Card</title>
+  <link rel="stylesheet" href="applyforcards.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="text-center">Apply for or Manage Your Card</h1>
+    <p class="text-center description">Apply for a new card or manage your existing Debit/Credit card</p>
+    <div class="container mt-3">
+    <a href="UserDashboard.jsp" class="btn btn-secondary">Back to Dashboard</a>
+  </div>
+    <form action="applyforcard.jsp" method="post" id="cardForm">
+
+
+      <!-- Select Card Action: Apply or Manage -->
+      <div class="form-group">
+        <label for="cardActionType">What would you like to do?</label>
+        <select class="form-control" id="cardActionType" name="s1" required>
+          <option value="">Select Action...</option>
+          <option value="applyNew">Apply for a new Debit/Credit Card</option>
+          <option value="manageExisting">Manage Existing Card (Activate/Block)</option>
+        </select>
+      </div>
+
+      <!-- New Card Application Section -->
+      <div id="applyNewSection" class="hidden">
+        <h2>Apply for a New Card</h2>
+        <div class="form-group">
+          <label for="newCardType">Select Card Type:</label>
+          <select class="form-control" id="newCardType" name="s2">
+            <option value="">Select...</option>
+            <option value="debit">Debit Card</option>
+            <option value="credit">Credit Card</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="fullName">Full Name (As on ID):</label>
+          <input type="text" class="form-control" id="fullName" name="s3" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="contactNumber">Contact Number:</label>
+          <input type="tel" class="form-control" id="contactNumber" name="s4" placeholder="Enter your contact number" required>
+        </div>
+
+        <div class="form-group">
+          <label for="address">Address:</label>
+          <textarea id="address" class="form-control input-textarea" name="s5" placeholder="Enter your address" required></textarea>
+        </div>
+      </div>
+
+      <!-- Manage Existing Card Section -->
+      <div id="manageExistingSection" class="hidden">
+        <h2>Manage Existing Card</h2>
+        <div class="form-group">
+          <label for="existingCardType">Select Card Type:</label>
+          <select class="form-control" id="existingCardType" name="s6">
+            <option value="">Select...</option>
+            <option value="debit">Debit Card</option>
+            <option value="credit">Credit Card</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="existingCardNumber">Card Number:</label>
+          <input type="text" class="form-control" id="existingCardNumber" name="s7" placeholder="Enter your card number" required>
+        </div>
+
+        <div class="form-group">
+          <label for="expiryDate">Card Expiry Date:</label>
+          <input type="date" class="form-control" id="expiryDate" name="s8" required>
+        </div>
+
+        <div class="form-group">
+          <label>Action:</label>
+          <div>
+            <input type="radio" class="input-radio" id="activate" name="cardAction" value="activate" required>
+            <label for="activate">Activate</label>
+          </div>
+          <div>
+            <input type="radio" class="input-radio" id="block" name="cardAction" value="block" required>
+            <label for="block">Block</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="reason">Reason (Optional):</label>
+          <textarea id="reason" class="form-control input-textarea" name="s9" placeholder="Provide a reason if blocking the card"></textarea>
+        </div>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="submit-button">Submit</button>
+
+    </form>
+  </div>
+
+  <script>
+  // JavaScript to show/hide sections based on user selection
+  document.getElementById('cardActionType').addEventListener('change', function () {
+    var actionType = this.value;
+    var applyNewSection = document.getElementById('applyNewSection');
+    var manageExistingSection = document.getElementById('manageExistingSection');
+
+    // Remove required attributes from all fields initially
+    var allRequiredFields = document.querySelectorAll('[required]');
+    allRequiredFields.forEach(function(field) {
+      field.removeAttribute('required');
+    });
+
+    if (actionType === 'applyNew') {
+      applyNewSection.classList.remove('hidden');
+      manageExistingSection.classList.add('hidden');
+
+      // Add required attributes to fields in the applyNew section
+      document.getElementById('newCardType').setAttribute('required', 'required');
+      document.getElementById('fullName').setAttribute('required', 'required');
+      document.getElementById('contactNumber').setAttribute('required', 'required');
+      document.getElementById('address').setAttribute('required', 'required');
+      
+    } else if (actionType === 'manageExisting') {
+      manageExistingSection.classList.remove('hidden');
+      applyNewSection.classList.add('hidden');
+
+      // Add required attributes to fields in the manageExisting section
+      document.getElementById('existingCardType').setAttribute('required', 'required');
+      document.getElementById('existingCardNumber').setAttribute('required', 'required');
+      document.getElementById('expiryDate').setAttribute('required', 'required');
+      document.querySelector('input[name="cardAction"]').setAttribute('required', 'required'); // Note: Only one of these radio buttons needs to be required
+
+    } else {
+      applyNewSection.classList.add('hidden');
+      manageExistingSection.classList.add('hidden');
+    }
+  });
+</script>
+
+</body>
+</html>

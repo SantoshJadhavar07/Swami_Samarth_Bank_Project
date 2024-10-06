@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Update</title>
+    <link rel="stylesheet" href="userprofileupdate.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Update Profile</h1>
+            <p class="description">Update your profile information below.</p>
+        </div>
+        <div class="container mt-3">
+    <a href="UserDashboard.jsp" class="btn btn-secondary">Back to Dashboard</a>
+  </div>
+        <form action="userprofileupdatefetch.jsp" method="POST">
+            <div class="form-group">
+                <label for="uid">User ID</label>
+                <input type="text" id="uid" name="uid" class="form-control" placeholder="User ID" readonly>
+            </div>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone No</label>
+                <input type="tel" id="phone" name="phone" class="form-control" placeholder="Enter your phone number" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" class="form-control" placeholder="Enter your password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmpassword">Confirm Password</label>
+                <input type="password" id="confirmpassword" name="confirmpassword" class="form-control" placeholder="Confirm your password" required>
+            </div>
+            <button type="submit" class="submit-button">Update Profile</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Shree Swami Samarth Co-operative Bank">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="maindashboard.css">
+    <title>Shree Swami Samarth Co-operative Bank</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <i class="fa-solid fa-building-columns"></i>
+                    <h2>Shree Swami Samarth Co-operative Bank</h2>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#top">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#who-we-are">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-toggle="modal" data-target="#contactModal" class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="UserReg.html">Registration</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Login</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="adminlogin.html">Admin</a>
+                                <a class="dropdown-item" href="Userlogin.html">User</a>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Banner Starts Here -->
+    <div class="main-banner header-text" id="top">
+        <div class="Modern-Slider">
+            <!-- Item -->
+            <div class="item item-1">
+                <div class="img-fill">
+                    <div class="text-content">
+                        <h6>We are committed to your financial success</h6>
+                        <h4>Banking Solutions<br>&amp; Services</h4>
+                        <p>Welcome to Shree Swami Samarth Co-operative Bank. We offer a wide range of financial services tailored to meet your needs.</p>
+                        <a href="#" data-toggle="modal" data-target="#contactModal" class="filled-button">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <!-- // Item -->
+            <!-- Item -->
+            <div class="item item-2">
+                <div class="img-fill">
+                    <div class="text-content">
+                        <h6>Personalized Banking Experience</h6>
+                        <h4>Loans & Investments<br>&amp; More</h4>
+                        <p>Explore our diverse range of loan and investment options. We're here to help you make the best financial decisions.</p>
+                        <a href="#" class="filled-button">Our Services</a>
+                    </div>
+                </div>
+            </div>
+            <!-- // Item -->
+            <!-- Item -->
+            <div class="item item-3">
+                <div class="img-fill">
+                    <div class="text-content">
+                        <h6>Expert Financial Guidance</h6>
+                        <h4>Financial Planning<br>&amp; Advisory</h4>
+                        <p>Our experts provide comprehensive financial planning and advisory services to help you achieve your goals.</p>
+                        <a href="#" class="filled-button">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- // Item -->
+        </div>
+    </div>
+    
+    <!-- Banner Ends Here -->
+
+    <!-- Request a Callback Section -->
+<div class="request-form py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-8">
+                <h4>Request a call back right now?</h4>
+                <span>We're here to assist you with all your banking needs.</span>
+            </div>
+            <div class="col-md-4 text-md-right text-center">
+                <a href="#" data-toggle="modal" data-target="#contactModal" class="btn btn-contact">Contact Us</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Services Section -->
+    <div id="services" class="services py-5">
+        <div class="container">
+            <div class="section-heading text-center mb-4">
+                <h2>Our <em>Services</em></h2>
+                <span>Comprehensive banking solutions for you</span>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="services-carousel" class="owl-carousel owl-theme">
+                        <div class="service-item">
+                            <img src="service_01.jpg" class="img-fluid" alt="Personal Loans">
+                            <div class="down-content">
+                                <h4>Personal Loans</h4>
+                                <p>Flexible personal loan options tailored to meet your needs. Apply today to get started.</p>
+                               <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#personalLoansModal">Read More</a>
+
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <img src="service_02.jpg" class="img-fluid" alt="Home Loans">
+                            <div class="down-content">
+                                <h4>Home Loans</h4>
+                                <p>Competitive home loan rates and easy approval process. Let us help you achieve your dream home.</p>
+                                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#homeLoansModal">Read More</a>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <img src="service_03.jpg" class="img-fluid" alt="Investment Solutions">
+                            <div class="down-content">
+                                <h4>Investment Solutions</h4>
+                                <p>Explore our investment options to grow your wealth. Our experts are here to guide you.</p>
+                                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#investmentSolutionsModal">Read More</a>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <img src="single_service_01.jpg" class="img-fluid" alt="Banking Services">
+                            <div class="down-content">
+                                <h4>Banking Services</h4>
+                                <p>Tailored banking solutions for your needs. From savings to loans, we offer a full range of services.</p>
+                                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#bankingServicesModal">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Commitment Section -->
+    <div class="fun-facts py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="left-content">
+                        <span>Dedicated to Excellence</span>
+                        <h2>Our commitment to your <em>financial success</em></h2>
+                        <p>At Shree Swami Samarth Co-operative Bank, we pride ourselves on delivering exceptional banking services to help you achieve your financial goals. Our team is dedicated to providing personalized service and innovative solutions to meet your needs.</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#commitmentModal">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-6"> 
+                    <div class="right-content">
+                         <div class="count-area-content"> 
+                            <div class="count-digit">945</div> 
+                            <div class="count-title">Happy Clients</div> 
+                        </div> 
+                        <div class="count-area-content"> 
+                            <div class="count-digit">1280</div> 
+                            <div class="count-title">Projects Completed</div> 
+                        </div> 
+                        <div class="count-area-content"> 
+                            <div class="count-digit">578</div> 
+                            <div class="count-title">Awards Won</div> 
+                        </div> 
+                        <div class="count-area-content"> 
+                            <div class="count-digit">26</div> 
+                            <div class="count-title">Team Members</div> 
+                        </div> 
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </div>
+    <!-- Who We Are Section -->
+<div id="who-we-are" class="who-we-are py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="more-info.jpg" class="img-fluid" alt="About Shree Swami Samarth Bank">
+            </div>
+            <div class="col-md-6">
+                <div class="content">
+                    <h2>Who We Are</h2>
+                    <h4>Get to Know About Our Bank</h4>
+                    <p>Shree Swami Samarth Co-operative Bank is dedicated to providing top-notch banking services that meet the financial needs of our customers. With a strong commitment to our community and values, we aim to deliver personalized solutions to help you achieve your financial goals.</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#whoWeAreModal">Read More</a>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+<!-- What They Say About Us Section -->
+<!-- What They Say About Us Section -->
+<div class="testimonials py-5">
+    <div class="container">
+        <div class="section-heading text-center">
+            <h2>What They Say About Us</h2>
+            <p>Your trusted partner in financial growth</p>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="testimonial-item">
+                    <p>"Excellent service and very supportive team!"</p>
+                    <div class="customer-name">Rohan Sharma</div>
+                    <div class="customer-title">Customer</div>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#testimonialsModal">Read More</a>    
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial-item">
+                    <p>"Great experience with personalized financial solutions."</p>
+                    <div class="customer-name">Priya Patel</div>
+                    <div class="customer-title">Customer</div>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#testimonialsModal">Read More</a> 
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial-item">
+                    <p>"Highly recommend their services for anyone seeking reliable banking."</p>
+                    <div class="customer-name">Arjun Desai</div>
+                    <div class="customer-title">Customer</div>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#testimonialsModal">Read More</a> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Footer -->
+<footer class="py-4 bg-dark text-white">
+    <div class="container">
+        <div class="row">
+            <!-- About Us -->
+            <div class="col-md-3">
+                <div class="footer-widget">
+                    <h4>About Us</h4>
+                    <p>Shree Swami Samarth Co-operative Bank is committed to offering exceptional banking services to meet your financial needs.</p>
+                     <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#whoWeAreModal">Learn More</a>
+                </div>
+            </div>
+            
+            <!-- Quick Links -->
+            <div class="col-md-3">
+                <div class="footer-widget">
+                    <h4>Quick Links</h4>
+                    <ul class="useful-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Who We Are</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">Request a Callback</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Social Media -->
+            <div class="col-md-3">
+                <div class="footer-widget">
+                    <h4>Follow Us</h4>
+                    <ul class="social-links">
+                        <li><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Contact Us Form -->
+            <div class="col-md-3">
+                <div class="footer-widget">
+                    <h4>Contact Us</h4>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Full Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="2" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-parrot">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-3">
+
+        <!-- Additional Links and Tagline -->
+        <div class="row">
+            <div class="col-md-6">
+                <p>&copy; 2024 Shree Swami Samarth Co-operative Bank. All Rights Reserved.</p>
+            </div>
+            <div class="col-md-6 text-right">
+                <ul class="footer-additional-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Modal for Personal Loans -->
+<div class="modal fade" id="personalLoansModal" tabindex="-1" role="dialog" aria-labelledby="personalLoansModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="personalLoansModalLabel">Personal Loans</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Flexible personal loan options tailored to meet your needs. Apply today to get started.</p>
+                <h6>Features:</h6>
+                <ul>
+                    <li>Low interest rates</li>
+                    <li>Quick and easy application process</li>
+                    <li>No collateral required</li>
+                    <li>Flexible repayment terms</li>
+                    <li>Fast disbursement of funds</li>
+                </ul>
+                <h6>Benefits:</h6>
+                <ul>
+                    <li>Access to funds when you need them most</li>
+                    <li>Improved cash flow management</li>
+                    <li>Ability to consolidate debt</li>
+                    <li>Support for personal and financial goals</li>
+                </ul>
+                <h6>Eligibility Criteria:</h6>
+                <ul>
+                    <li>Must be at least 18 years old</li>
+                    <li>Proof of stable income</li>
+                    <li>Good credit history</li>
+                    <li>Valid identification</li>
+                </ul>
+                <h6>Application Process:</h6>
+                <ol>
+                    <li>Fill out the online application form</li>
+                    <li>Submit required documents</li>
+                    <li>Receive approval and offer</li>
+                    <li>Accept the offer and sign the agreement</li>
+                    <li>Receive funds in your account</li>
+                </ol>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Home Loans -->
+<div class="modal fade" id="homeLoansModal" tabindex="-1" role="dialog" aria-labelledby="homeLoansModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="homeLoansModalLabel">Home Loans</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Competitive home loan rates and an easy approval process. Let us help you achieve your dream home.</p>
+                
+                <h6>Features:</h6>
+                <ul>
+                    <li>Low interest rates and flexible terms</li>
+                    <li>Quick and simple application process</li>
+                    <li>Pre-approval option available</li>
+                    <li>Loan amounts tailored to your needs</li>
+                    <li>Options for both fixed and variable rates</li>
+                </ul>
+                
+                <h6>Benefits:</h6>
+                <ul>
+                    <li>Affordable monthly payments</li>
+                    <li>Ability to purchase or refinance your home</li>
+                    <li>Support with finding the right loan for you</li>
+                    <li>Potential tax benefits on mortgage interest</li>
+                </ul>
+                
+                <h6>Eligibility Criteria:</h6>
+                <ul>
+                    <li>Must be at least 18 years old</li>
+                    <li>Proof of stable income and employment</li>
+                    <li>Good credit score</li>
+                    <li>Valid identification and proof of residency</li>
+                    <li>Down payment or equity in the property</li>
+                </ul>
+                
+                <h6>Application Process:</h6>
+                <ol>
+                    <li>Complete the online application form</li>
+                    <li>Provide necessary documents (income, identification, etc.)</li>
+                    <li>Get pre-approved for your loan amount</li>
+                    <li>Review and accept the loan offer</li>
+                    <li>Finalize paperwork and close the loan</li>
+                    <li>Receive funds and start your home journey</li>
+                </ol>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Investment Solutions -->
+<div class="modal fade" id="investmentSolutionsModal" tabindex="-1" role="dialog" aria-labelledby="investmentSolutionsModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="investmentSolutionsModalLabel">Investment Solutions</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+               <p>Explore our investment options to grow your wealth. Our experts are here to guide you.</p>
+                
+                <h6>Investment Options:</h6>
+                <ul>
+                    <li>Mutual Funds: Diversify your portfolio with professionally managed investments.</li>
+                    <li>Stocks: Invest directly in companies with high growth potential.</li>
+                    <li>Bonds: Secure fixed returns with government or corporate bonds.</li>
+                    <li>Real Estate: Invest in property for rental income and capital appreciation.</li>
+                    <li>Retirement Plans: Plan for your future with tax-advantaged retirement accounts.</li>
+                </ul>
+                
+                <h6>Benefits:</h6>
+                <ul>
+                    <li>Customized investment strategies based on your financial goals</li>
+                    <li>Diversification to minimize risk and maximize returns</li>
+                    <li>Access to expert advice and market insights</li>
+                    <li>Potential for long-term wealth accumulation</li>
+                </ul>
+                
+                <h6>Expert Guidance:</h6>
+                <ul>
+                    <li>Personalized consultations with certified financial advisors</li>
+                    <li>Regular portfolio reviews and adjustments</li>
+                    <li>Market analysis and trend forecasting</li>
+                    <li>Educational resources to enhance your investment knowledge</li>
+                </ul>
+                
+                <h6>How to Get Started:</h6>
+                <ol>
+                    <li>Contact us to schedule a free consultation</li>
+                    <li>Discuss your financial goals and investment preferences</li>
+                    <li>Receive a customized investment plan tailored to your needs</li>
+                    <li>Start investing with our expert assistance</li>
+                    <li>Monitor your investments and adjust strategies as needed</li>
+                </ol>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Banking Services -->
+<div class="modal fade" id="bankingServicesModal" tabindex="-1" role="dialog" aria-labelledby="bankingServicesModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="bankingServicesModalLabel">Banking Services</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Tailored banking solutions for your needs. From savings to loans, we offer a full range of services.</p>
+                
+                <h6>Our Services Include:</h6>
+                <ul>
+                    <li><strong>Checking Accounts:</strong> Convenient accounts with easy access to your funds and various features like overdraft protection and online banking.</li>
+                    <li><strong>Savings Accounts:</strong> High-yield savings options to help you grow your savings with competitive interest rates.</li>
+                    <li><strong>Personal Loans:</strong> Flexible loan options for personal needs, including debt consolidation, home improvements, and more.</li>
+                    <li><strong>Mortgages:</strong> Competitive rates and customized mortgage solutions for buying or refinancing your home.</li>
+                    <li><strong>Business Banking:</strong> Comprehensive services for business accounts, including checking, savings, loans, and merchant services.</li>
+                    <li><strong>Investment Services:</strong> Professional advice and investment products to help you plan for your financial future.</li>
+                    <li><strong>Credit Cards:</strong> Various credit card options with rewards, cash back, and other benefits.</li>
+                    <li><strong>Financial Planning:</strong> Expert financial planning and advisory services to help you achieve your financial goals.</li>
+                </ul>
+                
+                <h6>Benefits of Banking with Us:</h6>
+                <ul>
+                    <li>Personalized service and tailored financial solutions</li>
+                    <li>Access to a wide range of banking products and services</li>
+                    <li>Competitive rates and flexible terms</li>
+                    <li>Advanced online and mobile banking options</li>
+                    <li>Dedicated support from knowledgeable banking professionals</li>
+                </ul>
+                
+                <h6>How to Get Started:</h6>
+                <ol>
+                    <li>Visit any of our branches or contact us online</li>
+                    <li>Discuss your banking needs and financial goals with our advisors</li>
+                    <li>Select the services that best meet your needs</li>
+                    <li>Complete the required application forms and documentation</li>
+                    <li>Start using our services with the support of our team</li>
+                </ol>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Commitment -->
+<div class="modal fade" id="commitmentModal" tabindex="-1" role="dialog" aria-labelledby="commitmentModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="commitmentModalLabel">Our Commitment to Your Financial Success</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>At Shree Swami Samarth Co-operative Bank, we pride ourselves on delivering exceptional banking services to help you achieve your financial goals. Our team is dedicated to providing personalized service and innovative solutions to meet your needs.</p>
+                
+                <h6>Our Core Values:</h6>
+                <ul>
+                    <li><strong>Customer-Centric Approach:</strong> We place our customers at the heart of everything we do, striving to understand and exceed their expectations.</li>
+                    <li><strong>Integrity and Transparency:</strong> We uphold the highest standards of integrity and transparency in all our dealings, ensuring trust and confidence.</li>
+                    <li><strong>Innovation:</strong> We continuously seek innovative solutions and technologies to enhance our services and provide you with the best banking experience.</li>
+                    <li><strong>Excellence:</strong> We are committed to excellence in service delivery and operational efficiency, aiming to be the best in the industry.</li>
+                    <li><strong>Community Focus:</strong> We believe in giving back to the community and supporting local initiatives that contribute to societal well-being.</li>
+                </ul>
+                
+                <h6>Our Commitment to You:</h6>
+                <p>We are dedicated to offering:</p>
+                <ul>
+                    <li>Personalized financial advice and support tailored to your unique needs and goals.</li>
+                    <li>Accessible and user-friendly banking solutions through our digital platforms and branch network.</li>
+                    <li>Competitive rates and flexible terms to ensure you receive the best value for your banking relationships.</li>
+                    <li>Responsive customer service to address your concerns and provide timely assistance.</li>
+                    <li>Ongoing improvements and innovations to ensure our services remain relevant and effective.</li>
+                </ul>
+                
+                <h6>Contact Us:</h6>
+                <p>If you have any questions or need further assistance, our dedicated team is here to help. Please reach out to us through our contact channels or visit our branches for personalized support.</p>
+            
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Who We Are -->
+<div class="modal fade" id="whoWeAreModal" tabindex="-1" role="dialog" aria-labelledby="whoWeAreModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="whoWeAreModalLabel">Who We Are</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Shree Swami Samarth Co-operative Bank is dedicated to providing top-notch banking services that meet the financial needs of our customers. With a strong commitment to our community and values, we aim to deliver personalized solutions to help you achieve your financial goals.</p>
+                
+                <h6>About Us:</h6>
+                <p>Founded with a vision to make banking accessible and efficient, Shree Swami Samarth Co-operative Bank has grown to become a trusted name in the financial industry. Our bank operates on the principles of trust, integrity, and customer satisfaction. We are committed to offering a wide range of financial products and services that cater to the diverse needs of our clients.</p>
+                
+                <h6>Our Mission:</h6>
+                <p>Our mission is to empower individuals and businesses with the financial tools they need to succeed. We strive to provide exceptional service, innovative solutions, and a seamless banking experience that exceeds expectations.</p>
+                
+                <h6>Our Vision:</h6>
+                <p>We envision being the preferred choice for banking services by continually evolving and adapting to the changing needs of our customers. Our goal is to be a pillar of financial stability and growth in the community.</p>
+                
+                <h6>What Sets Us Apart:</h6>
+                <ul>
+                    <li><strong>Personalized Service:</strong> We offer tailored financial solutions designed to meet the unique needs of each customer.</li>
+                    <li><strong>Community Focus:</strong> Our bank is deeply rooted in the community, and we actively support local initiatives and development.</li>
+                    <li><strong>Expert Team:</strong> Our team of banking professionals brings a wealth of knowledge and experience to provide expert guidance and support.</li>
+                    <li><strong>Innovative Solutions:</strong> We leverage the latest technology to enhance our services and ensure a convenient banking experience.</li>
+                    <li><strong>Commitment to Excellence:</strong> We are dedicated to maintaining high standards of service and continuously improving our offerings.</li>
+                </ul>
+                
+                <h6>Contact Us:</h6>
+                <p>If you would like to learn more about our services or have any questions, please do not hesitate to contact us. Our team is here to assist you and provide the information you need to make informed financial decisions.</p>
+            </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Testimonials -->
+<div class="modal fade" id="testimonialsModal" tabindex="-1" role="dialog" aria-labelledby="testimonialsModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="testimonialsModalLabel">What They Say About Us</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="testimonial-item">
+                    <p>"Excellent service and very supportive team! The personalized attention I received made all the difference in managing my finances."</p>
+                    <div class="customer-name">Rohan Sharma</div>
+                    <div class="customer-title">Customer</div>
+                </div>
+                <div class="testimonial-item">
+                    <p>"Great experience with personalized financial solutions. The team at Shree Swami Samarth Co-operative Bank truly understands the needs of their clients and provides exceptional support."</p>
+                    <div class="customer-name">Priya Patel</div>
+                    <div class="customer-title">Customer</div>
+                </div>
+                <div class="testimonial-item">
+                    <p>"Highly recommend their services for anyone seeking reliable banking. Their commitment to customer satisfaction and comprehensive solutions have exceeded my expectations."</p>
+                    <div class="customer-name">Arjun Desai</div>
+                    <div class="customer-title">Customer</div>
+                </div>
+                <!-- Add more testimonials or detailed feedback here -->
+                
+                <h6>Why Our Customers Love Us:</h6>
+                <p>Our customers appreciate the tailored financial solutions and exceptional service provided by our team. Here’s what some of them have to say:</p>
+                <ul>
+                    <li><strong>Personalized Attention:</strong> We take the time to understand each customer's unique needs and provide solutions that fit their specific requirements.</li>
+                    <li><strong>Reliable Support:</strong> Our team is always available to assist with any inquiries or concerns, ensuring a smooth and hassle-free banking experience.</li>
+                    <li><strong>Innovative Solutions:</strong> We continuously strive to offer cutting-edge financial products and services that meet the evolving needs of our customers.</li>
+                </ul>
+                
+                <h6>More Customer Experiences:</h6>
+                <p>We are grateful for the feedback from our customers and are committed to continuously improving our services based on their valuable input.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Contact Us Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="usermsg.jsp" method="post">
+            <div class="form-group">
+              <label for="fullName">Full Name</label>
+              <input type="text" class="form-control" id="fullName" name="s1" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+              <label for="emailAddress">Email address</label>
+              <input type="email" class="form-control" id="emailAddress" name="s2" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea class="form-control" id="message" rows="3" name="s3" placeholder="Enter your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-parrot">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  
+<!-- Bootstrap core JavaScript -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/owl.carousel/1.3.3/owl.carousel.min.js"></script>
+
+   
+<script>
+    $(document).ready(function() {
+    // Initialize the services carousel
+    $("#services-carousel").owlCarousel({
+        items: 3,
+        loop: true,
+        margin: 10,
+        nav: true
+    });
+
+    // Smooth Scrolling to Sections
+    $(".nav-link[href^='#']:not([data-toggle='modal'])").click(function(event) {
+        event.preventDefault();
+        var target = $(this).attr('href');
+        if ($(target).length) {
+            $('html, body').animate({
+                scrollTop: $(target).offset().top
+            }, 800);
+        }
+    });
+
+    // Trigger Contact Us Modal when clicking on any link or button with "contact" or "Contact Us"
+    $(document).on('click', 'a[href*="contact"], a:contains("Contact Us"), button:contains("Contact Us")', function(event) {
+        event.preventDefault();
+        $("#contactModal").modal('show');
+    });
+});
+
+</script>
+
+</body>
+</html>
+<style>
+/* Modal Background Overlay */
+.modal-backdrop.show {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Modal Dialog */
+.modal-dialog {
+    max-width: 800px; /* Adjust as needed */
+    margin: 1.75rem auto;
+}
+
+/* Modal Content */
+.modal-content {
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+/* Modal Header */
+.modal-header {
+    border-bottom: 1px solid #e9ecef;
+    padding: 1rem;
+    background-color: #f7f7f7;
+}
+
+.modal-title {
+    font-size: 1.25rem;
+    margin: 0;
+    color: #333;
+}
+
+.close {
+    font-size: 1.5rem;
+    color: #333;
+    opacity: 0.5;
+}
+
+.close:hover {
+    opacity: 1;
+}
+
+/* Modal Body */
+.modal-body {
+    padding: 1rem;
+    color: #555;
+}
+
+.modal-body h6 {
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: #333;
+}
+
+.modal-body ul,
+.modal-body ol {
+    margin-left: 1.5rem;
+}
+
+/* Modal Footer */
+.modal-footer {
+    border-top: 1px solid #e9ecef;
+    padding: 0.75rem 1.25rem;
+    background-color: #f7f7f7;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+</style>

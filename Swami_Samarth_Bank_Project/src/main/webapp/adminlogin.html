@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Admin Login - Shree Swami Samarth Co-operative Bank</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="adminlogin.css">
+	<!-- Link to external CSS file for admin -->
+</head>
+
+<body>
+
+
+	<main class="container">
+		<div class="row justify-content-center align-items-center min-vh-100">
+			<div class="col-md-8 col-lg-6">
+				<div class="login-card p-4 p-md-5">
+					<h2 class="text-center">Admin Login</h2>
+					<form action="adlogin.jsp" method="post">
+						<div class="form-group">
+							<label for="adminUsername">Username</label> <input type="text" class="form-control"
+								id="adminUsername" name="s1" placeholder="Enter admin username" required>
+						</div>
+						<div class="form-group">
+							<label for="adminPassword">Password</label> <input type="password" class="form-control"
+								id="adminPassword" name="s2" placeholder="Enter password" required>
+						</div>
+						<button type="submit" class="btn btn-primary btn-block">Login</button>
+						<div class="text-center mt-3">
+							<a href="#" class="btn btn-link" data-toggle="modal"
+								data-target="#resetPasswordModal">Forgot Password?</a>
+								 <a href="maindashboard.html" class="btn btn-link">Back to Dashboard</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- Reset Password Modal -->
+	<div class="modal fade" id="resetPasswordModal" tabindex="-1" role="dialog"
+		aria-labelledby="resetPasswordModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="resetPasswordModalLabel">Reset
+						Password</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form action="adforgotpassword.jsp" method="post">
+						<div class="form-group">
+							<label for="resetAdminEmail">Email address</label> <input type="email" class="form-control"
+								id="resetAdminEmail" name="a1" placeholder="Enter your email" required>
+						</div>
+						<div class="form-group">
+							<label for="newAdminPassword">New Password</label> <input type="password"
+								class="form-control" id="newAdminPassword" name="a2" placeholder="Enter new password"
+								required>
+						</div>
+						<div class="form-group">
+							<label for="confirmAdminPassword">Confirm Password</label> <input type="password"
+								class="form-control" id="confirmAdminPassword" name="a3"
+								placeholder="Confirm new password" required>
+						</div>
+						<button type="submit" class="btn btn-primary btn-block">Reset
+							Password</button>
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Scripts -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

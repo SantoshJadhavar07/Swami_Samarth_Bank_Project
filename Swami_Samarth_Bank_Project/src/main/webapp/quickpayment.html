@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pay - Quick Transfer & Bills</title>
+  <link rel="stylesheet" href="quickpayment.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="text-center">Pay</h1>
+    <p class="text-center description">Choose the type of payment and enter the details</p>
+    <div class="container mt-3">
+    <a href="UserDashboard.jsp" class="btn btn-secondary">Back to Dashboard</a>
+  </div>
+    <form action="quickpayment.jsp" method="post" id="paymentForm">
+      <!-- Payment Type Selection -->
+      <div class="form-group">
+        <label for="paymentType">Select Payment Type:</label>
+        <select id="paymentType" name="paymentType" class="form-control" required>
+          <option value="">Select...</option>
+          <option value="quickTransfer">Quick Transfer</option>
+          <option value="creditCardBill">Credit Card Bill</option>
+          <option value="mobileRecharge">Mobile Recharge</option>
+          <option value="electricityBill">Electricity Bill</option>
+        </select>
+      </div>
+
+      <!-- Payment Details (Initially hidden) -->
+      <div id="paymentDetails">
+
+        <!-- Quick Transfer -->
+        <div id="quickTransfer" class="payment-option" style="display: none;">
+          <h2>Quick Transfer</h2>
+          <div class="form-group">
+            <label for="transferAccount">Transfer to:</label>
+            <select id="transferAccount" name="transferAccount" class="form-control" required>
+              <option value="sameBank">Same Bank</option>
+              <option value="otherBank">Other Bank</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="transferAmount">Amount:</label>
+            <input type="number" id="transferAmount" name="transferAmount" class="form-control" placeholder="Enter amount" required>
+          </div>
+          <div class="form-group">
+            <label for="transferDate">Transfer Date:</label>
+            <input type="date" id="transferDate" name="transferDate" class="form-control" required>
+          </div>
+        </div>
+
+        <!-- Credit Card Bill -->
+        <div id="creditCardBill" class="payment-option" style="display: none;">
+          <h2>Credit Card Bill</h2>
+          <div class="form-group">
+            <label for="cardNumber">Credit Card Number:</label>
+            <input type="text" id="cardNumber" name="cardNumber" class="form-control" placeholder="Enter card number" required>
+          </div>
+          <div class="form-group">
+            <label for="billAmount">Bill Amount:</label>
+            <input type="number" id="billAmount" name="billAmount" class="form-control" placeholder="Enter amount" required>
+          </div>
+          <div class="form-group">
+            <label for="billDate">Payment Date:</label>
+            <input type="date" id="billDate" name="billDate" class="form-control" required>
+          </div>
+        </div>
+
+        <!-- Mobile Recharge -->
+        <div id="mobileRecharge" class="payment-option" style="display: none;">
+          <h2>Mobile Recharge</h2>
+          <div class="form-group">
+            <label for="mobileNumber">Mobile Number:</label>
+            <input type="text" id="mobileNumber" name="mobileNumber" class="form-control" placeholder="Enter mobile number" required>
+          </div>
+          <div class="form-group">
+            <label for="rechargeAmount">Recharge Amount:</label>
+            <input type="number" id="rechargeAmount" name="rechargeAmount" class="form-control" placeholder="Enter amount" required>
+          </div>
+          <div class="form-group">
+            <label for="rechargeDate">Recharge Date:</label>
+            <input type="date" id="rechargeDate" name="rechargeDate" class="form-control" required>
+          </div>
+        </div>
+
+        <!-- Electricity Bill -->
+        <div id="electricityBill" class="payment-option" style="display: none;">
+          <h2>Electricity Bill</h2>
+          <div class="form-group">
+            <label for="meterNumber">Meter Number:</label>
+            <input type="text" id="meterNumber" name="meterNumber" class="form-control" placeholder="Enter meter number" required>
+          </div>
+          <div class="form-group">
+            <label for="electricityAmount">Bill Amount:</label>
+            <input type="number" id="electricityAmount" name="electricityAmount" class="form-control" placeholder="Enter amount" required>
+          </div>
+          <div class="form-group">
+            <label for="electricityBillDate">Payment Date:</label>
+            <input type="date" id="electricityBillDate" name="electricityBillDate" class="form-control" required>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="submit-button">Submit Payment</button>
+    </form>
+  </div>
+
+ <script>
+  document.getElementById('paymentType').addEventListener('change', function() {
+    var selectedValue = this.value;
+    var options = document.querySelectorAll('.payment-option');
+    
+    // Hide all payment options and disable their input fields
+    options.forEach(option => {
+      option.style.display = 'none';
+      option.querySelectorAll('input, select').forEach(input => {
+        input.disabled = true;
+      });
+    });
+
+    // Show the selected payment option and enable its input fields
+    if (selectedValue) {
+      var selectedOption = document.getElementById(selectedValue);
+      selectedOption.style.display = 'block';
+      selectedOption.querySelectorAll('input, select').forEach(input => {
+        input.disabled = false;
+      });
+    }
+  });
+</script>
+
+</body>
+</html>

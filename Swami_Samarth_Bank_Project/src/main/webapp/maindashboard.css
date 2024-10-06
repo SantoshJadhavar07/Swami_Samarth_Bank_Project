@@ -1,0 +1,629 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Navigation Bar */
+
+/* Header Styles */
+/* Navbar Styles */
+.navbar {
+    background-color: #9acd32; /* Orange Background */
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    color: #fff; /* White text for brand */
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.navbar-brand i {
+    margin-right: 20px; /* Space between icon and text */
+    font-size: 30px;
+    color: #deec0f; /* White color for the icon */
+}
+
+.navbar-toggler {
+    border: none;
+    color: #fff; /* White color for the toggler */
+}
+
+.navbar-toggler-icon {
+    color: #fff; /* White color for the toggler icon */
+    background-color: #fff;
+}
+
+.navbar-nav .nav-link {
+    color: #fff; /* White text for links */
+    margin-left: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #e67e22; /* Slightly lighter orange on hover */
+    border-bottom: 2px solid #fff; /* Underline effect */
+}
+
+.navbar-nav .dropdown-menu {
+    background-color: #fff; /* White background for dropdown */
+    border-radius: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.navbar-nav .dropdown-item {
+    color: #333; /* Dark text color */
+    padding: 10px 20px;
+}
+
+.navbar-nav .dropdown-item:hover {
+    background-color: #f39c12; /* Orange on hover */
+    color: #fff; /* White text on hover */
+}
+
+/* Navbar brand text styling */
+.navbar-brand h2 {
+    margin: 0;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* Toggler icon customization for mobile */
+.navbar-toggler-icon {
+    background-image: none;
+    font-size: 24px;
+}
+
+@media (max-width: 991px) {
+    .navbar-nav .nav-link {
+        margin-left: 0;
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #ddd;
+    }
+    .navbar-nav .dropdown-menu {
+        position: static;
+        float: none;
+    }
+}
+
+
+
+/* Main Banner */
+.main-banner {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.Modern-Slider .item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: slideAnimation 9s infinite; /* Quick change */
+}
+
+.Modern-Slider .item-1 {
+    background-image: url('slide_01.jpg');
+}
+
+.Modern-Slider .item-2 {
+    background-image: url('slide_02.jpg');
+    animation-delay: 3s;
+}
+
+.Modern-Slider .item-3 {
+    background-image: url('slide_03.jpg');
+    animation-delay: 6s;
+}
+
+@keyframes slideAnimation {
+    0% { opacity: 0; }
+    8% { opacity: 1; }
+    33% { opacity: 1; }
+    41% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+.text-content {
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    color: #ecf0f1; /* Light Gray */
+    max-width: 500px;
+}
+
+.text-content h6 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #f39c12; /* Orange */
+}
+
+.text-content h4 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.text-content p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.filled-button {
+    background-color: #f39c12; /* Orange */
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.filled-button:hover {
+    background-color: #e67e22; /* Darker Orange */
+}
+
+
+
+/* Request Callback Section */
+/* Request Callback Section */
+.request-form {
+    background-color: #9acd32; /* Parrot Green */
+    color: #fff;
+    padding: 60px 0; /* Ensure adequate padding */
+}
+
+.request-form h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fff; /* Ensure text is white */
+}
+
+.request-form span {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 20px;
+    color: #fff; /* Ensure text is white */
+}
+
+.btn-contact {
+    background-color: #fff;
+    color: #2ecc71; /* Parrot Green */
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    border: 2px solid #2ecc71; /* Parrot Green */
+    display: block;
+    width: 100%; /* Full width for small screens */
+    max-width: 250px; /* Optional: limit max width on larger screens */
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.btn-contact:hover {
+    background-color: #27ae60; /* Darker Green */
+    color: #fff;
+    border-color: #27ae60; /* Darker Green */
+}
+
+/* Responsive Adjustment */
+@media (max-width: 767px) {
+    .btn-contact {
+        width: 100%; /* Ensure full width on small screens */
+    }
+}
+
+
+/* Services Section */
+/* Services Section */
+/* Services Section */
+.services {
+    background-color: #f4f4f4; /* Light Gray Background */
+    padding: 60px 0;
+}
+
+.section-heading h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.section-heading em {
+    color: #f39c12; /* Orange */
+}
+
+.section-heading span {
+    font-size: 18px;
+    color: #7f8c8d; /* Gray */
+}
+
+/* Carousel Container */
+#services-carousel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -10px; /* Negative margin to counteract the padding of the items */
+}
+
+/* Carousel Items */
+.service-item {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    padding: 20px; /* Padding around the content */
+    text-align: center;
+    border-left: 4px solid #f39c12; /* Vertical line color */
+    margin: 10px; /* Spacing between items */
+    width: calc(25% - 20px); /* Ensure four items fit in one row */
+    height: 500px; /* Increased height */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.service-item img {
+    width: 100%;
+    height: 180px; /* Increased image height */
+    object-fit: cover;
+    border-bottom: 2px solid #f39c12; /* Border below image */
+}
+
+.down-content {
+    padding: 20px; /* Padding around content */
+}
+
+.down-content h4 {
+    font-size: 22px;
+    margin-bottom: 15px; /* Spacing below the heading */
+    color: #34495e; /* Dark Blue */
+    font-weight: 600;
+}
+
+.down-content p {
+    font-size: 16px; /* Font size for description */
+    color: #7f8c8d; /* Gray */
+    margin-bottom: 20px; /* Spacing below the paragraph */
+}
+
+.btn-primary {
+    background-color: #f39c12; /* Orange */
+    color: #fff;
+    padding: 10px 20px; /* Padding around button text */
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 16px; /* Font size for button text */
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #e67e22; /* Darker Orange */
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+    .service-item {
+        width: calc(33.333% - 20px); /* Three items per row on medium screens */
+        height: 300px; /* Adjusted height for medium screens */
+    }
+}
+
+@media (max-width: 767px) {
+    .service-item {
+        width: calc(50% - 20px); /* Two items per row on small screens */
+        margin-bottom: 20px;
+        height: 280px; /* Adjusted height for small screens */
+    }
+
+    .service-item img {
+        height: 150px; /* Adjusted image height for small screens */
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
+    .section-heading span {
+        font-size: 16px;
+    }
+}
+
+
+/* Fun Facts Section */
+/* Commitment Section Styles */
+.fun-facts {
+    position: relative;
+    padding: 5rem 0;
+    background-image: url('fun-facts-bg.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+}
+
+.fun-facts .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black transparent overlay */
+}
+
+.fun-facts .container {
+    position: relative;
+    z-index: 1;
+}
+
+.fun-facts .left-content span {
+    color: white;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.fun-facts .left-content h2 {
+    color: #9acd32; /* Light parrot yellow-green for "financial success" */
+    margin-bottom: 1.5rem;
+}
+
+.fun-facts .left-content h2 em {
+    color: #9acd32; /* Light parrot yellow-green */
+}
+
+.fun-facts .left-content p {
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.fun-facts .left-content .btn-primary {
+    background-color: #9acd32; /* Light parrot yellow-green */
+    border: none;
+    color: white;
+}
+
+.fun-facts .right-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.fun-facts .count-area-content {
+    background-color: rgba(255, 255, 255, 0.2); /* Transparent white */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 48%; /* Width reduced to fit two boxes per row */
+    text-align: center;
+}
+
+.fun-facts .count-digit {
+    font-size: 36px;
+    color: #9acd32; /* Light parrot yellow-green for numbers */
+}
+
+.fun-facts .count-title {
+    font-size: 16px;
+    color: white; /* White for text */
+}
+
+/* Who We Are Section */
+.who-we-are {
+    background-color: #f4f4f4;
+}
+
+.who-we-are .content h2 {
+    font-size: 36px;
+    color: #34495e; /* Dark Blue */
+    margin-bottom: 10px;
+}
+
+.who-we-are .content h4 {
+    font-size: 24px;
+    color: #27ae60; /* Light Parrot Green */
+    margin-bottom: 20px;
+}
+
+.who-we-are .content p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.who-we-are .content .btn-primary {
+    background-color: #27ae60; /* Light Parrot Green */
+    border-color: #27ae60;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.who-we-are .content .btn-primary:hover {
+    background-color: #219150; /* Darker Parrot Green */
+    border-color: #219150;
+}
+
+/* What They Say About Us Section */
+/* What They Say About Us Section */
+.testimonials {
+    padding: 60px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.testimonials .section-heading {
+    margin-bottom: 40px;
+}
+
+.testimonials .section-heading h2 {
+    font-size: 32px;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.testimonials .section-heading p {
+    font-size: 18px;
+    color: #9acd32; /* Parrot yellow-green color */
+    margin-bottom: 40px;
+}
+
+.testimonial-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.testimonial-item:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial-item p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.testimonial-item .customer-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+}
+
+.testimonial-item .customer-title {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.testimonial-item .read-more {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #9acd32; /* Parrot yellow-green */
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.testimonial-item .read-more:hover {
+    background-color: #8bbc28; /* Slightly darker shade */
+}
+
+
+
+
+/* Footer */
+/* Footer Styling */
+footer {
+    padding: 30px 0; /* Reduced padding */
+    background-color: #333; /* Dark background */
+}
+
+.footer-widget h4 {
+    font-size: 18px;
+    margin-bottom: 15px; /* Reduced margin */
+    font-weight: bold;
+}
+
+.footer-widget p, .footer-widget a {
+    color: #ccc;
+    font-size: 14px; /* Slightly smaller font size */
+    margin-bottom: 10px; /* Reduced spacing between elements */
+}
+
+.footer-widget a:hover {
+    color: #fff;
+}
+
+.useful-links, .social-links, .footer-additional-links {
+    list-style: none;
+    padding: 0;
+}
+
+.useful-links li, .social-links li, .footer-additional-links li {
+    margin-bottom: 8px; /* Reduced margin */
+}
+
+.useful-links li a, .social-links li a, .footer-additional-links li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px; /* Slightly smaller font size */
+}
+
+.useful-links li a:hover, .social-links li a:hover, .footer-additional-links li a:hover {
+    color: #fff;
+}
+
+.contact-form .form-control {
+    background-color: #444;
+    border: 1px solid #555;
+    color: #ccc;
+    margin-bottom: 10px; /* Reduced spacing between form elements */
+}
+
+.contact-form .btn-parrot {
+    background-color: #a4c639;
+    color: #fff;
+    width: 100%;
+}
+
+.contact-form .btn-parrot:hover {
+    background-color: #8db82c;
+}
+
+.footer-additional-links {
+    text-align: right;
+}
+
+.footer-additional-links li {
+    display: inline;
+    margin-right: 10px; /* Reduced spacing between links */
+}
+
+hr.my-4 {
+    margin: 20px 0; /* Reduced margin for the horizontal line */
+}
+
+
+
+.modal-header {
+    background-color: #007bff;
+    color: white;
+}
+.btn-parrot {
+    background-color: #a6d25e; /* Parrot yellow-green color */
+    color: white;
+}
+
